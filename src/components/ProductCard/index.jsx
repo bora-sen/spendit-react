@@ -29,7 +29,7 @@ function ProductCard(card_obj) {
     <MoneyContext.Consumer>
     {val => 
     <div className={style.product_card}>
-      <img className='' src='https://loremflickr.com/500/600' alt="" />
+      <img className='' src={cardObj.img} alt="" />
       {/* Title Section */}
       <div className={style.title_section}>
         <h5 className='font-bold'>{cardObj.title}</h5>

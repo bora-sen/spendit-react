@@ -5,7 +5,7 @@ import dataset from '../../dataset.json';
 function Products() {
   let cards = dataset.products;
   return (
-    <section className='flex bg-gray-100 mt-4'>
+    <section className='flex flex-wrap justify-center'>
       {cards.map(card => {
           return <ProductCard card={card} />
         })

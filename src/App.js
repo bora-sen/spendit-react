@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <MoneyContextProvider>
-      <main className='container mx-auto'>
+      <main className='container md:mx-auto sm:mx-auto'>
         <Header />
         <Products />
       </main>
