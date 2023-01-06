@@ -1,0 +1,5 @@
+{
+    "[css]": {
+        "tailwindCSS.lint.invalidTailwindDirective": "error"
+    }
+}

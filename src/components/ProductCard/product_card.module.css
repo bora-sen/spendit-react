@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .product_card{
+        @apply w-[15rem] p-4 bg-blue-100 m-4 rounded-sm
+    }
+    .title_section{
+        @apply flex items-center justify-between text-2xl h-auto
+    }
+    .buttons_section{
+        @apply flex items-center justify-evenly h-12 mt-2
+    }
+    .buttons{
+        @apply p-4 bg-red-600
+    }
+}
