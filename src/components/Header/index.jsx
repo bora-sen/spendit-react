@@ -1,18 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { MoneyContext } from '../../context/MoneyContext'
 
 function Header() {
+  const {money} = useContext(MoneyContext);
   return (
-    <MoneyContext.Consumer>
-      {val => (
-            <header className='flex flex-col items-center justify-center bg-slate-100 h-auto py-4 text-gray-900 md:flex-row sm:flex-row sm:justify-around md:justify-around'>
-            {/* Brand Text */}
-            <h1 className='text-5xl font-bungee'>spendIt</h1>
-            {/* Right Section */}
-            <span className='text-2xl font-bold'>Current Money: {val.money}</span>
-          </header>
-      )}
-    </MoneyContext.Consumer>
+    <header className='sticky top-0 shadow-lg flex flex-col items-center justify-center bg-slate-100 h-auto py-4 text-gray-900 md:flex-row sm:flex-row sm:justify-between'>
+      <h1 className='text-5xl font-bungee sm:ml-4'>spendIt</h1>
+      <span className='text-2xl font-bold mr-4 mt-4 sm:mt-0'>Current Money: ${money}</span>
+    </header>
   )
 }
 

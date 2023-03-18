@@ -4,15 +4,15 @@
 
 @layer utilities {
     .product_card{
-        @apply w-[10rem] md:w-[14rem] p-2 bg-blue-100 m-2 rounded-md hover:bg-gray-300 transition-all
+        @apply grid w-[11rem] md:w-[19rem] h-[24rem] bg-slate-100 bg-opacity-60 p-2 shadow-xl m-2 rounded-xl hover:bg-opacity-90 transition-all
     }
     .title_section{
         @apply flex items-center justify-between text-xl h-auto
     }
     .buttons_section{
-        @apply flex items-center justify-evenly h-12 mt-2
+        @apply flex items-center justify-evenly h-12 my-4
     }
     .buttons{
-        @apply p-2 bg-red-600
+        @apply p-4 bg-indigo-500 font-bold text-white text-lg rounded-xl hover:bg-indigo-600 disabled:bg-indigo-100
     }
 }
